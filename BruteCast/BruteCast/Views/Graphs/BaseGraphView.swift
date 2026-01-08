@@ -30,14 +30,14 @@ struct BaseGraphContainer<Content: View>: View {
 
                 content()
                     .chartXAxis {
-                        AxisMarks(values: .stride(by: xAxisStride)) { value in
+                        AxisMarks(values: .automatic(desiredCount: xAxisDesiredCount)) { value in
                             AxisValueLabel(format: xAxisFormat)
                                 .font(.custom("JetBrainsMono-Regular", size: 7))
                                 .foregroundStyle(settingsVM.currentTheme.text.opacity(0.6))
                         }
                     }
                     .chartYAxis {
-                        AxisMarks(position: .leading) { value in
+                        AxisMarks(position: .leading, values: .automatic(desiredCount: 3)) { value in
                             AxisValueLabel()
                                 .font(.custom("JetBrainsMono-Regular", size: 7))
                                 .foregroundStyle(settingsVM.currentTheme.text.opacity(0.6))
@@ -62,11 +62,11 @@ struct BaseGraphContainer<Content: View>: View {
         }
     }
 
-    private var xAxisStride: Calendar.Component {
+    private var xAxisDesiredCount: Int {
         switch timeRange {
-        case .twelveHours: return .hour
-        case .thirtySixHours: return .hour
-        case .fiveDays: return .day
+        case .twelveHours: return 4
+        case .thirtySixHours: return 6
+        case .fiveDays: return 5
         }
     }
 

@@ -52,8 +52,9 @@ final class WeatherService: WeatherServiceProtocol {
     }
 
     private func parseHourlyData(from response: OpenMeteoResponse) -> [HourlyWeather] {
-        let dateFormatter = ISO8601DateFormatter()
-        dateFormatter.formatOptions = [.withFullDate, .withTime, .withDashSeparatorInDate, .withColonSeparatorInTime]
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
+        dateFormatter.timeZone = TimeZone(identifier: response.timezone) ?? .current
 
         var hourlyWeather: [HourlyWeather] = []
 
