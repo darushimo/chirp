@@ -7,7 +7,9 @@ struct MainView: View {
 
     @State private var showSettings = false
     @State private var showCityPicker = false
+    @State private var showCityDetail = false
     @State private var editingCitySlot: Int?
+    @State private var selectedDetailCityIndex: Int = 0
 
     var body: some View {
         GeometryReader { geometry in
@@ -34,6 +36,13 @@ struct MainView: View {
                             }
                         )
                         .frame(height: cityRowHeight(for: geometry))
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            if SettingsManager.shared.settings.selectedCities[index] != nil {
+                                selectedDetailCityIndex = index
+                                showCityDetail = true
+                            }
+                        }
 
                         if index < 2 {
                             Divider()
@@ -60,6 +69,20 @@ struct MainView: View {
                     showCityPicker = false
                 }
             )
+            .environmentObject(settingsVM)
+        }
+        .fullScreenCover(isPresented: $showCityDetail) {
+            CityDetailView(
+                selectedCityIndex: $selectedDetailCityIndex,
+                onEditTapped: { index in
+                    editingCitySlot = index
+                    showCityDetail = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        showCityPicker = true
+                    }
+                }
+            )
+            .environmentObject(weatherVM)
             .environmentObject(settingsVM)
         }
         .task {
