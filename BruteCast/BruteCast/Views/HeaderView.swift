@@ -97,7 +97,7 @@ struct HeaderView: View {
         }
     }
 
-    private var timeRangeToggle: View {
+    private var timeRangeToggle: some View {
         HStack(spacing: 2) {
             ForEach(TimeRange.allCases) { range in
                 Button(action: { selectedTimeRange = range }) {

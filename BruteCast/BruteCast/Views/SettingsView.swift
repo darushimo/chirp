@@ -134,7 +134,7 @@ struct SettingsView: View {
     private func unitToggle<T: Hashable>(
         options: [T],
         selected: T,
-        label: (T) -> String,
+        label: @escaping (T) -> String,
         onSelect: @escaping (T) -> Void
     ) -> some View {
         HStack(spacing: 0) {

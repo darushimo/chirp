@@ -62,7 +62,7 @@ struct CityRowView: View {
         .padding(.vertical, 4)
     }
 
-    private var cityHeader: View {
+    private var cityHeader: some View {
         HStack(spacing: 6) {
             if let city = city {
                 Text(city.name.uppercased())
@@ -119,7 +119,7 @@ struct CityRowView: View {
         .accessibilityLabel("\(count) weather alerts")
     }
 
-    private var emptyState: View {
+    private var emptyState: some View {
         Button(action: onEditTapped) {
             VStack {
                 Spacer()
