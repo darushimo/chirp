@@ -55,7 +55,7 @@ struct SmallWidgetView: View {
 
                 Text("Open app to configure")
                     .font(.custom("JetBrainsMono-Regular", size: 8))
-                    .foregroundColor(.tertiary)
+                    .foregroundStyle(.tertiary)
             }
 
             Spacer()
@@ -69,7 +69,7 @@ struct SmallWidgetView: View {
 
                 Text(entry.data.headerCity?.timezone ?? "")
                     .font(.custom("JetBrainsMono-Regular", size: 8))
-                    .foregroundColor(.tertiary)
+                    .foregroundStyle(.tertiary)
             }
         }
         .padding(12)
