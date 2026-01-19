@@ -62,6 +62,8 @@
 		E10000000000000000000206 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000206 /* ThemeTests.swift */; };
 		E10000000000000000000207 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000207 /* MockURLProtocol.swift */; };
 		E10000000000000000000208 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000208 /* MockLocationService.swift */; };
+		E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000209 /* ReliabilityRunnerTests.swift */; };
+		E10000000000000000000210 /* ReliabilityRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000210 /* ReliabilityRunner.swift */; };
 		E10000000000000000000300 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000300 /* LaunchTests.swift */; };
 		E10000000000000000000301 /* CitySelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000301 /* CitySelectionTests.swift */; };
 		E10000000000000000000302 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000302 /* NavigationTests.swift */; };
@@ -157,6 +159,8 @@
 		E20000000000000000000206 /* ThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000207 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		E20000000000000000000208 /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
+		E20000000000000000000209 /* ReliabilityRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityRunnerTests.swift; sourceTree = "<group>"; };
+		E20000000000000000000210 /* ReliabilityRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityRunner.swift; sourceTree = "<group>"; };
 		E20000000000000000000300 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000301 /* CitySelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000302 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 				E90000000000000000000022 /* ViewModels */,
 				E90000000000000000000023 /* Models */,
 				E90000000000000000000024 /* Mocks */,
+				E90000000000000000000025 /* TestHelpers */,
 			);
 			path = BruteCastTests;
 			sourceTree = "<group>";
@@ -381,6 +386,15 @@
 				E20000000000000000000208 /* MockLocationService.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000025 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				E20000000000000000000210 /* ReliabilityRunner.swift */,
+				E20000000000000000000209 /* ReliabilityRunnerTests.swift */,
+			);
+			path = TestHelpers;
 			sourceTree = "<group>";
 		};
 		E90000000000000000000030 /* BruteCastUITests */ = {
@@ -640,6 +654,8 @@
 				E10000000000000000000206 /* ThemeTests.swift in Sources */,
 				E10000000000000000000207 /* MockURLProtocol.swift in Sources */,
 				E10000000000000000000208 /* MockLocationService.swift in Sources */,
+				E10000000000000000000210 /* ReliabilityRunner.swift in Sources */,
+				E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
