@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */; };
 		E10000000000000000000001 /* BruteCastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000001 /* BruteCastApp.swift */; };
 		E10000000000000000000010 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000010 /* City.swift */; };
 		E10000000000000000000011 /* HourlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000011 /* HourlyWeather.swift */; };
@@ -63,7 +64,9 @@
 		E10000000000000000000207 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000207 /* MockURLProtocol.swift */; };
 		E10000000000000000000208 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000208 /* MockLocationService.swift */; };
 		E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000209 /* ReliabilityRunnerTests.swift */; };
+		684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestHelpers.swift; sourceTree = "<group>"; };
 		E10000000000000000000210 /* ReliabilityRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000210 /* ReliabilityRunner.swift */; };
+		E10000000000000000000211 /* AsyncTestHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000211 /* AsyncTestHelpersTests.swift */; };
 		E10000000000000000000300 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000300 /* LaunchTests.swift */; };
 		E10000000000000000000301 /* CitySelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000301 /* CitySelectionTests.swift */; };
 		E10000000000000000000302 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000302 /* NavigationTests.swift */; };
@@ -161,6 +164,7 @@
 		E20000000000000000000208 /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
 		E20000000000000000000209 /* ReliabilityRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityRunnerTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000210 /* ReliabilityRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityRunner.swift; sourceTree = "<group>"; };
+		E20000000000000000000211 /* AsyncTestHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestHelpersTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000300 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000301 /* CitySelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000302 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
@@ -393,7 +397,8 @@
 			children = (
 				E20000000000000000000210 /* ReliabilityRunner.swift */,
 				E20000000000000000000209 /* ReliabilityRunnerTests.swift */,
-			);
+				E20000000000000000000211 /* AsyncTestHelpersTests.swift */,
+				684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */,);
 			path = TestHelpers;
 			sourceTree = "<group>";
 		};
@@ -656,6 +661,8 @@
 				E10000000000000000000208 /* MockLocationService.swift in Sources */,
 				E10000000000000000000210 /* ReliabilityRunner.swift in Sources */,
 				E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */,
+				CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */,
+				E10000000000000000000211 /* AsyncTestHelpersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
