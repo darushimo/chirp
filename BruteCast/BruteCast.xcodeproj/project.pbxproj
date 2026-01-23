@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */; };
+		9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */; };
 		CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */; };
 		E10000000000000000000001 /* BruteCastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000001 /* BruteCastApp.swift */; };
 		E10000000000000000000010 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000010 /* City.swift */; };
@@ -113,6 +115,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTask.swift; sourceTree = "<group>"; };
+		8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTaskTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000001 /* BruteCastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteCastApp.swift; sourceTree = "<group>"; };
 		E20000000000000000000010 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		E20000000000000000000011 /* HourlyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeather.swift; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 				E90000000000000000000014 /* ViewModels */,
 				E90000000000000000000015 /* Views */,
 				E90000000000000000000016 /* Mocks */,
+				E90000000000000000000027 /* Patterns */,
 				E90000000000000000000017 /* Resources */,
 				E20000000000000000000400 /* Info.plist */,
 			);
@@ -321,6 +326,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E90000000000000000000027 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				E90000000000000000000028 /* AsyncPatterns */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000028 /* AsyncPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */,
+			);
+			path = AsyncPatterns;
+			sourceTree = "<group>";
+		};
 		E90000000000000000000018 /* Graphs */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +372,7 @@
 				E90000000000000000000023 /* Models */,
 				E90000000000000000000024 /* Mocks */,
 				E90000000000000000000025 /* TestHelpers */,
+				E90000000000000000000026 /* PatternTests */,
 			);
 			path = BruteCastTests;
 			sourceTree = "<group>";
@@ -400,6 +422,14 @@
 				E20000000000000000000211 /* AsyncTestHelpersTests.swift */,
 				684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */,);
 			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000026 /* PatternTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */,
+			);
+			path = PatternTests;
 			sourceTree = "<group>";
 		};
 		E90000000000000000000030 /* BruteCastUITests */ = {
@@ -643,6 +673,7 @@
 				E10000000000000000000072 /* MockAlerts.swift in Sources */,
 				E10000000000000000000080 /* SharedTypes.swift in Sources */,
 				E10000000000000000000081 /* AppGroup.swift in Sources */,
+				7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +694,7 @@
 				E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */,
 				CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */,
 				E10000000000000000000211 /* AsyncTestHelpersTests.swift in Sources */,
+				9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
