@@ -61,6 +61,7 @@
 		E10000000000000000000202 /* GeocodingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000202 /* GeocodingServiceTests.swift */; };
 		E10000000000000000000203 /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000203 /* WeatherViewModelTests.swift */; };
 		E10000000000000000000204 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000204 /* SettingsViewModelTests.swift */; };
+		E10000000000000000000212 /* CitySearchViewModelDebounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */; };
 		E10000000000000000000205 /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000205 /* CityTests.swift */; };
 		E10000000000000000000206 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000206 /* ThemeTests.swift */; };
 		E10000000000000000000207 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000207 /* MockURLProtocol.swift */; };
@@ -162,6 +163,7 @@
 		E20000000000000000000202 /* GeocodingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingServiceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000203 /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000204 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModelDebounceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000205 /* CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000206 /* ThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000207 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			children = (
 				E20000000000000000000203 /* WeatherViewModelTests.swift */,
 				E20000000000000000000204 /* SettingsViewModelTests.swift */,
+				E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				E10000000000000000000202 /* GeocodingServiceTests.swift in Sources */,
 				E10000000000000000000203 /* WeatherViewModelTests.swift in Sources */,
 				E10000000000000000000204 /* SettingsViewModelTests.swift in Sources */,
+				E10000000000000000000212 /* CitySearchViewModelDebounceTests.swift in Sources */,
 				E10000000000000000000205 /* CityTests.swift in Sources */,
 				E10000000000000000000206 /* ThemeTests.swift in Sources */,
 				E10000000000000000000207 /* MockURLProtocol.swift in Sources */,

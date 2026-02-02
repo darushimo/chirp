@@ -9,27 +9,27 @@ final class CitySearchViewModel: ObservableObject {
     @Published var error: Error?
 
     private let geocodingService: GeocodingServiceProtocol
-    private var searchTask: Task<Void, Never>?
     private var cancellables = Set<AnyCancellable>()
+
+    private lazy var searchTask: DebouncedTask<String> = {
+        DebouncedTask(delay: 0.3) { [weak self] query in
+            await self?.performSearch(query: query)
+        }
+    }()
 
     init(geocodingService: GeocodingServiceProtocol = GeocodingService.shared) {
         self.geocodingService = geocodingService
-        setupDebounce()
-    }
 
-    private func setupDebounce() {
+        // Subscribe to searchText changes and submit to DebouncedTask
         $searchText
-            .debounce(for: .milliseconds(300), scheduler: DispatchQueue.main)
             .removeDuplicates()
             .sink { [weak self] query in
-                self?.performSearch(query: query)
+                self?.searchTask.submit(query)
             }
             .store(in: &cancellables)
     }
 
-    private func performSearch(query: String) {
-        searchTask?.cancel()
-
+    private func performSearch(query: String) async {
         guard !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             searchResults = []
             isSearching = false
@@ -39,26 +39,24 @@ final class CitySearchViewModel: ObservableObject {
         isSearching = true
         error = nil
 
-        searchTask = Task {
-            do {
-                let results = try await geocodingService.searchCities(query: query)
-                if !Task.isCancelled {
-                    searchResults = results
-                }
-            } catch {
-                if !Task.isCancelled {
-                    self.error = error
-                    searchResults = []
-                }
-            }
+        do {
+            let results = try await geocodingService.searchCities(query: query)
             if !Task.isCancelled {
-                isSearching = false
+                searchResults = results
             }
+        } catch {
+            if !Task.isCancelled {
+                self.error = error
+                searchResults = []
+            }
+        }
+        if !Task.isCancelled {
+            isSearching = false
         }
     }
 
     func clear() {
-        searchTask?.cancel()
+        searchTask.cancel()
         searchText = ""
         searchResults = []
         error = nil
