@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C605D4ECFE482CB8B94769 /* SettingsViewModelDebounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */; };
 		7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */; };
 		9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */; };
 		CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */; };
@@ -163,6 +164,7 @@
 		E20000000000000000000202 /* GeocodingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingServiceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000203 /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000204 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelDebounceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModelDebounceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000205 /* CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000206 /* ThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
@@ -291,7 +293,8 @@
 				E20000000000000000000030 /* WeatherViewModel.swift */,
 				E20000000000000000000031 /* SettingsViewModel.swift */,
 				E20000000000000000000032 /* CitySearchViewModel.swift */,
-			);
+			
+				C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */,);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
