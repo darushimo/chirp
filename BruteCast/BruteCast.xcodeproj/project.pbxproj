@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0B232339B104C8DB16CE167 /* TimeBasedFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244A8185B9D4D43AA24E95F /* TimeBasedFiltering.swift */; };
+		68177D87446E4578990B1A68 /* TimeBasedFilteringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A9D22B2034E8B89EB90E7 /* TimeBasedFilteringTests.swift */; };
 		09C605D4ECFE482CB8B94769 /* SettingsViewModelDebounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */; };
 		2C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */; };
 		7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */; };
@@ -119,6 +121,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1244A8185B9D4D43AA24E95F /* TimeBasedFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedFiltering.swift; sourceTree = "<group>"; };
+		8B6A9D22B2034E8B89EB90E7 /* TimeBasedFilteringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedFilteringTests.swift; sourceTree = "<group>"; };
 		1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataGeneratorTests.swift; sourceTree = "<group>"; };
 		6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTask.swift; sourceTree = "<group>"; };
 		8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTaskTests.swift; sourceTree = "<group>"; };
@@ -221,6 +225,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F73291771B2F44C3881B1D16 /* DataPatterns */ = {isa = PBXGroup; children = (
+				1244A8185B9D4D43AA24E95F /* TimeBasedFiltering.swift */,
+			); path = DataPatterns; sourceTree = "<group>"; };
 		E90000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
@@ -331,7 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				E20000000000000000000073 /* MockDataGenerator.swift */,
-			);
+							F73291771B2F44C3881B1D16 /* DataPatterns */,
+);
 			path = Patterns;
 			sourceTree = "<group>";
 		};
@@ -448,7 +456,8 @@
 			children = (
 				8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */,
 				1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */,
-			);
+							8B6A9D22B2034E8B89EB90E7 /* TimeBasedFilteringTests.swift */,
+);
 			path = PatternTests;
 			sourceTree = "<group>";
 		};
