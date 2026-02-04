@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09C605D4ECFE482CB8B94769 /* SettingsViewModelDebounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */; };
+		2C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */; };
 		7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */; };
 		9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */; };
 		CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */; };
@@ -40,6 +41,7 @@
 		E10000000000000000000070 /* MockWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000070 /* MockWeatherData.swift */; };
 		E10000000000000000000071 /* MockCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000071 /* MockCities.swift */; };
 		E10000000000000000000072 /* MockAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000072 /* MockAlerts.swift */; };
+		E10000000000000000000073 /* MockDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000073 /* MockDataGenerator.swift */; };
 		E10000000000000000000080 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000080 /* SharedTypes.swift */; };
 		E10000000000000000000081 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000081 /* AppGroup.swift */; };
 		E10000000000000000000090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000090 /* Assets.xcassets */; };
@@ -117,6 +119,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataGeneratorTests.swift; sourceTree = "<group>"; };
 		6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTask.swift; sourceTree = "<group>"; };
 		8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTaskTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000001 /* BruteCastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteCastApp.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 		E20000000000000000000070 /* MockWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherData.swift; sourceTree = "<group>"; };
 		E20000000000000000000071 /* MockCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCities.swift; sourceTree = "<group>"; };
 		E20000000000000000000072 /* MockAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlerts.swift; sourceTree = "<group>"; };
+		E20000000000000000000073 /* MockDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataGenerator.swift; sourceTree = "<group>"; };
 		E20000000000000000000080 /* SharedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTypes.swift; sourceTree = "<group>"; };
 		E20000000000000000000081 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		E20000000000000000000090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -318,8 +322,17 @@
 				E20000000000000000000070 /* MockWeatherData.swift */,
 				E20000000000000000000071 /* MockCities.swift */,
 				E20000000000000000000072 /* MockAlerts.swift */,
+				E90000000000000000000029 /* Patterns */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000029 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				E20000000000000000000073 /* MockDataGenerator.swift */,
+			);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 		E90000000000000000000017 /* Resources */ = {
@@ -434,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */,
+				1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */,
 			);
 			path = PatternTests;
 			sourceTree = "<group>";
@@ -677,6 +691,7 @@
 				E10000000000000000000070 /* MockWeatherData.swift in Sources */,
 				E10000000000000000000071 /* MockCities.swift in Sources */,
 				E10000000000000000000072 /* MockAlerts.swift in Sources */,
+				E10000000000000000000073 /* MockDataGenerator.swift in Sources */,
 				E10000000000000000000080 /* SharedTypes.swift in Sources */,
 				E10000000000000000000081 /* AppGroup.swift in Sources */,
 				7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */,
@@ -702,6 +717,7 @@
 				CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */,
 				E10000000000000000000211 /* AsyncTestHelpersTests.swift in Sources */,
 				9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */,
+				2C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
