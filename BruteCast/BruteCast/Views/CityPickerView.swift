@@ -46,7 +46,7 @@ struct CityPickerView: View {
         }
     }
 
-    private var searchField: View {
+    private var searchField: some View {
         HStack {
             Image(systemName: "magnifyingglass")
                 .foregroundColor(settingsVM.currentTheme.text.opacity(0.5))
@@ -75,7 +75,7 @@ struct CityPickerView: View {
         .padding()
     }
 
-    private var loadingView: View {
+    private var loadingView: some View {
         VStack {
             Spacer()
             ProgressView()
@@ -107,7 +107,7 @@ struct CityPickerView: View {
         }
     }
 
-    private var noResultsView: View {
+    private var noResultsView: some View {
         VStack {
             Spacer()
             Text("NO CITIES FOUND")
@@ -117,7 +117,7 @@ struct CityPickerView: View {
         }
     }
 
-    private var resultsList: View {
+    private var resultsList: some View {
         ScrollView {
             LazyVStack(spacing: 0) {
                 ForEach(searchVM.searchResults) { city in

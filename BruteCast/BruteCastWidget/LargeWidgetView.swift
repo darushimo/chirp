@@ -27,7 +27,7 @@ struct LargeWidgetView: View {
                     .foregroundColor(.secondary)
                 Text("Open app to add cities")
                     .font(.custom("JetBrainsMono-Regular", size: 9))
-                    .foregroundColor(.tertiary)
+                    .foregroundStyle(.tertiary)
                 Spacer()
             }
 
@@ -110,7 +110,7 @@ struct LargeWidgetView: View {
 
                 Text("\(weather.city.localTime) \(weather.city.timezone)")
                     .font(.custom("JetBrainsMono-Regular", size: 8))
-                    .foregroundColor(.tertiary)
+                    .foregroundStyle(.tertiary)
             }
 
             Spacer()

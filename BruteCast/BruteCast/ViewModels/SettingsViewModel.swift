@@ -69,6 +69,22 @@ final class SettingsViewModel: ObservableObject {
             }
             .store(in: &cancellables)
 
+        // DEBOUNCING PATTERN: Combine.debounce()
+        //
+        // This uses Combine's built-in `.debounce()` operator to handle rapid color picker changes.
+        // When a user drags a color picker, this prevents creating a new Theme object for every
+        // single color value change, instead waiting 100ms after changes stop.
+        //
+        // Pattern Choice Rationale:
+        // - ✅ Use Combine.debounce() for: Reactive property changes, UI bindings, @Published flows
+        // - ✅ Use DebouncedTask for: Async operations, API calls, database queries
+        //
+        // This ViewModel uses Combine because:
+        // 1. Already Combine-based (@Published properties throughout)
+        // 2. No async operations - just synchronous Theme object creation
+        // 3. Natural fit with reactive color picker bindings
+        //
+        // See also: CitySearchViewModel uses DebouncedTask because it has async network calls
         Publishers.CombineLatest3(
             $backgroundColor,
             $textColor,

@@ -7,91 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		/* App */
+		C0B232339B104C8DB16CE167 /* TimeBasedFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244A8185B9D4D43AA24E95F /* TimeBasedFiltering.swift */; };
+		68177D87446E4578990B1A68 /* TimeBasedFilteringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A9D22B2034E8B89EB90E7 /* TimeBasedFilteringTests.swift */; };
+		09C605D4ECFE482CB8B94769 /* SettingsViewModelDebounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */; };
+		2C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */; };
+		7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */; };
+		9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */; };
+		CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */; };
 		E10000000000000000000001 /* BruteCastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000001 /* BruteCastApp.swift */; };
-
-		/* Models */
 		E10000000000000000000010 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000010 /* City.swift */; };
 		E10000000000000000000011 /* HourlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000011 /* HourlyWeather.swift */; };
 		E10000000000000000000012 /* WeatherAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000012 /* WeatherAlert.swift */; };
 		E10000000000000000000013 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000013 /* Theme.swift */; };
 		E10000000000000000000014 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000014 /* AppSettings.swift */; };
-
-		/* Services */
 		E10000000000000000000020 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000020 /* WeatherService.swift */; };
 		E10000000000000000000021 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000021 /* AlertService.swift */; };
 		E10000000000000000000022 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000022 /* GeocodingService.swift */; };
 		E10000000000000000000023 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000023 /* LocationService.swift */; };
-
-		/* ViewModels */
 		E10000000000000000000030 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000030 /* WeatherViewModel.swift */; };
 		E10000000000000000000031 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000031 /* SettingsViewModel.swift */; };
 		E10000000000000000000032 /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000032 /* CitySearchViewModel.swift */; };
-
-		/* Views */
 		E10000000000000000000040 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000040 /* MainView.swift */; };
 		E10000000000000000000041 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000041 /* HeaderView.swift */; };
 		E10000000000000000000042 /* CityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000042 /* CityRowView.swift */; };
 		E10000000000000000000043 /* CityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000043 /* CityPickerView.swift */; };
 		E10000000000000000000044 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000044 /* SettingsView.swift */; };
-
-		/* Graphs */
 		E10000000000000000000050 /* BaseGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000050 /* BaseGraphView.swift */; };
 		E10000000000000000000051 /* TemperatureGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000051 /* TemperatureGraphView.swift */; };
 		E10000000000000000000052 /* WindGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000052 /* WindGraphView.swift */; };
 		E10000000000000000000053 /* PrecipitationGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000053 /* PrecipitationGraphView.swift */; };
-
-		/* Overlays */
 		E10000000000000000000060 /* TouchDetailOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000060 /* TouchDetailOverlay.swift */; };
 		E10000000000000000000061 /* AlertTintOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000061 /* AlertTintOverlay.swift */; };
 		E10000000000000000000062 /* AlertBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000062 /* AlertBadgeView.swift */; };
 		E10000000000000000000063 /* AlertPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000063 /* AlertPopoverView.swift */; };
-
-		/* Mocks */
 		E10000000000000000000070 /* MockWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000070 /* MockWeatherData.swift */; };
 		E10000000000000000000071 /* MockCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000071 /* MockCities.swift */; };
 		E10000000000000000000072 /* MockAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000072 /* MockAlerts.swift */; };
-
-		/* Shared */
+		E10000000000000000000073 /* MockDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000073 /* MockDataGenerator.swift */; };
 		E10000000000000000000080 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000080 /* SharedTypes.swift */; };
 		E10000000000000000000081 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000081 /* AppGroup.swift */; };
-
-		/* Resources */
 		E10000000000000000000090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000090 /* Assets.xcassets */; };
 		E10000000000000000000091 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000091 /* JetBrainsMono-Regular.ttf */; };
 		E10000000000000000000092 /* JetBrainsMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000092 /* JetBrainsMono-Bold.ttf */; };
-
-		/* Widget */
 		E10000000000000000000100 /* BruteCastWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000100 /* BruteCastWidget.swift */; };
 		E10000000000000000000101 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000101 /* SmallWidgetView.swift */; };
 		E10000000000000000000102 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000102 /* MediumWidgetView.swift */; };
 		E10000000000000000000103 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000103 /* LargeWidgetView.swift */; };
 		E10000000000000000000104 /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000104 /* WidgetAssets.xcassets */; };
 		E10000000000000000000105 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000105 /* WidgetBundle.swift */; };
-
-		/* Tests */
-		E10000000000000000000200 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000200 /* WeatherServiceTests.swift */; };
-		E10000000000000000000201 /* AlertServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000201 /* AlertServiceTests.swift */; };
-		E10000000000000000000202 /* GeocodingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000202 /* GeocodingServiceTests.swift */; };
-		E10000000000000000000203 /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000203 /* WeatherViewModelTests.swift */; };
-		E10000000000000000000204 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000204 /* SettingsViewModelTests.swift */; };
-		E10000000000000000000205 /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000205 /* CityTests.swift */; };
-		E10000000000000000000206 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000206 /* ThemeTests.swift */; };
-		E10000000000000000000207 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000207 /* MockURLProtocol.swift */; };
-		E10000000000000000000208 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000208 /* MockLocationService.swift */; };
-
-		/* UI Tests */
-		E10000000000000000000300 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000300 /* LaunchTests.swift */; };
-		E10000000000000000000301 /* CitySelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000301 /* CitySelectionTests.swift */; };
-		E10000000000000000000302 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000302 /* NavigationTests.swift */; };
-		E10000000000000000000303 /* InteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000303 /* InteractionTests.swift */; };
-
-		/* Widget Shared */
+		E10000000000000000000106 /* BruteCastWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E70000000000000000000004 /* BruteCastWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E10000000000000000000110 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000080 /* SharedTypes.swift */; };
 		E10000000000000000000111 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000081 /* AppGroup.swift */; };
 		E10000000000000000000112 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000010 /* City.swift */; };
 		E10000000000000000000113 /* HourlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000011 /* HourlyWeather.swift */; };
 		E10000000000000000000114 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000013 /* Theme.swift */; };
+		E10000000000000000000200 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000200 /* WeatherServiceTests.swift */; };
+		E10000000000000000000201 /* AlertServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000201 /* AlertServiceTests.swift */; };
+		E10000000000000000000202 /* GeocodingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000202 /* GeocodingServiceTests.swift */; };
+		E10000000000000000000203 /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000203 /* WeatherViewModelTests.swift */; };
+		E10000000000000000000204 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000204 /* SettingsViewModelTests.swift */; };
+		E10000000000000000000212 /* CitySearchViewModelDebounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */; };
+		E10000000000000000000205 /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000205 /* CityTests.swift */; };
+		E10000000000000000000206 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000206 /* ThemeTests.swift */; };
+		E10000000000000000000207 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000207 /* MockURLProtocol.swift */; };
+		E10000000000000000000208 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000208 /* MockLocationService.swift */; };
+		E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000209 /* ReliabilityRunnerTests.swift */; };
+		684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestHelpers.swift; sourceTree = "<group>"; };
+		E10000000000000000000210 /* ReliabilityRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000210 /* ReliabilityRunner.swift */; };
+		E10000000000000000000211 /* AsyncTestHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000211 /* AsyncTestHelpersTests.swift */; };
+		E10000000000000000000300 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000300 /* LaunchTests.swift */; };
+		E10000000000000000000301 /* CitySelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000301 /* CitySelectionTests.swift */; };
+		E10000000000000000000302 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000302 /* NavigationTests.swift */; };
+		E10000000000000000000303 /* InteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20000000000000000000303 /* InteractionTests.swift */; };
+		EF0000000000000000000001 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = EF0000000000000000000002 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +96,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E50000000000000000000001;
 			remoteInfo = BruteCast;
+		};
+		E30000000000000000000010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E40000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E50000000000000000000004;
+			remoteInfo = BruteCastWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -126,93 +121,75 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		/* App */
+		1244A8185B9D4D43AA24E95F /* TimeBasedFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedFiltering.swift; sourceTree = "<group>"; };
+		8B6A9D22B2034E8B89EB90E7 /* TimeBasedFilteringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedFilteringTests.swift; sourceTree = "<group>"; };
+		1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataGeneratorTests.swift; sourceTree = "<group>"; };
+		6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTask.swift; sourceTree = "<group>"; };
+		8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedTaskTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000001 /* BruteCastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteCastApp.swift; sourceTree = "<group>"; };
-
-		/* Models */
 		E20000000000000000000010 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		E20000000000000000000011 /* HourlyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeather.swift; sourceTree = "<group>"; };
 		E20000000000000000000012 /* WeatherAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAlert.swift; sourceTree = "<group>"; };
 		E20000000000000000000013 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E20000000000000000000014 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-
-		/* Services */
 		E20000000000000000000020 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		E20000000000000000000021 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		E20000000000000000000022 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
 		E20000000000000000000023 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-
-		/* ViewModels */
 		E20000000000000000000030 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		E20000000000000000000031 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		E20000000000000000000032 /* CitySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
-
-		/* Views */
 		E20000000000000000000040 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E20000000000000000000041 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E20000000000000000000042 /* CityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRowView.swift; sourceTree = "<group>"; };
 		E20000000000000000000043 /* CityPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPickerView.swift; sourceTree = "<group>"; };
 		E20000000000000000000044 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-
-		/* Graphs */
 		E20000000000000000000050 /* BaseGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGraphView.swift; sourceTree = "<group>"; };
 		E20000000000000000000051 /* TemperatureGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureGraphView.swift; sourceTree = "<group>"; };
 		E20000000000000000000052 /* WindGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindGraphView.swift; sourceTree = "<group>"; };
 		E20000000000000000000053 /* PrecipitationGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecipitationGraphView.swift; sourceTree = "<group>"; };
-
-		/* Overlays */
 		E20000000000000000000060 /* TouchDetailOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDetailOverlay.swift; sourceTree = "<group>"; };
 		E20000000000000000000061 /* AlertTintOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTintOverlay.swift; sourceTree = "<group>"; };
 		E20000000000000000000062 /* AlertBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBadgeView.swift; sourceTree = "<group>"; };
 		E20000000000000000000063 /* AlertPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopoverView.swift; sourceTree = "<group>"; };
-
-		/* Mocks */
 		E20000000000000000000070 /* MockWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherData.swift; sourceTree = "<group>"; };
 		E20000000000000000000071 /* MockCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCities.swift; sourceTree = "<group>"; };
 		E20000000000000000000072 /* MockAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlerts.swift; sourceTree = "<group>"; };
-
-		/* Shared */
+		E20000000000000000000073 /* MockDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataGenerator.swift; sourceTree = "<group>"; };
 		E20000000000000000000080 /* SharedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTypes.swift; sourceTree = "<group>"; };
 		E20000000000000000000081 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
-
-		/* Resources */
 		E20000000000000000000090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20000000000000000000091 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
 		E20000000000000000000092 /* JetBrainsMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Bold.ttf"; sourceTree = "<group>"; };
-
-		/* Widget */
 		E20000000000000000000100 /* BruteCastWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteCastWidget.swift; sourceTree = "<group>"; };
 		E20000000000000000000101 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
 		E20000000000000000000102 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		E20000000000000000000103 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		E20000000000000000000104 /* WidgetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WidgetAssets.xcassets; sourceTree = "<group>"; };
 		E20000000000000000000105 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
-
-		/* Tests */
 		E20000000000000000000200 /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000201 /* AlertServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServiceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000202 /* GeocodingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingServiceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000203 /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000204 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelDebounceTests.swift; sourceTree = "<group>"; };
+		E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModelDebounceTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000205 /* CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000206 /* ThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000207 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		E20000000000000000000208 /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
-
-		/* UI Tests */
+		E20000000000000000000209 /* ReliabilityRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityRunnerTests.swift; sourceTree = "<group>"; };
+		E20000000000000000000210 /* ReliabilityRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliabilityRunner.swift; sourceTree = "<group>"; };
+		E20000000000000000000211 /* AsyncTestHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestHelpersTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000300 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000301 /* CitySelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000302 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		E20000000000000000000303 /* InteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionTests.swift; sourceTree = "<group>"; };
-
-		/* Products */
+		E20000000000000000000400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E70000000000000000000001 /* BruteCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BruteCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70000000000000000000002 /* BruteCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BruteCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70000000000000000000003 /* BruteCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BruteCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70000000000000000000004 /* BruteCastWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BruteCastWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-
-		/* Info.plist */
-		E20000000000000000000400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0000000000000000000001 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +225,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F73291771B2F44C3881B1D16 /* DataPatterns */ = {isa = PBXGroup; children = (
+				1244A8185B9D4D43AA24E95F /* TimeBasedFiltering.swift */,
+			); path = DataPatterns; sourceTree = "<group>"; };
 		E90000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +260,7 @@
 				E90000000000000000000014 /* ViewModels */,
 				E90000000000000000000015 /* Views */,
 				E90000000000000000000016 /* Mocks */,
+				E90000000000000000000027 /* Patterns */,
 				E90000000000000000000017 /* Resources */,
 				E20000000000000000000400 /* Info.plist */,
 			);
@@ -322,7 +304,8 @@
 				E20000000000000000000030 /* WeatherViewModel.swift */,
 				E20000000000000000000031 /* SettingsViewModel.swift */,
 				E20000000000000000000032 /* CitySearchViewModel.swift */,
-			);
+			
+				C6D25857F997414DA062882A /* SettingsViewModelDebounceTests.swift */,);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
@@ -346,8 +329,18 @@
 				E20000000000000000000070 /* MockWeatherData.swift */,
 				E20000000000000000000071 /* MockCities.swift */,
 				E20000000000000000000072 /* MockAlerts.swift */,
+				E90000000000000000000029 /* Patterns */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000029 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				E20000000000000000000073 /* MockDataGenerator.swift */,
+							F73291771B2F44C3881B1D16 /* DataPatterns */,
+);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 		E90000000000000000000017 /* Resources */ = {
@@ -357,6 +350,22 @@
 				E90000000000000000000060 /* Fonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000027 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				E90000000000000000000028 /* AsyncPatterns */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000028 /* AsyncPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				6B8A9C0D1E2F345678901234 /* DebouncedTask.swift */,
+			);
+			path = AsyncPatterns;
 			sourceTree = "<group>";
 		};
 		E90000000000000000000018 /* Graphs */ = {
@@ -388,6 +397,8 @@
 				E90000000000000000000022 /* ViewModels */,
 				E90000000000000000000023 /* Models */,
 				E90000000000000000000024 /* Mocks */,
+				E90000000000000000000025 /* TestHelpers */,
+				E90000000000000000000026 /* PatternTests */,
 			);
 			path = BruteCastTests;
 			sourceTree = "<group>";
@@ -407,6 +418,7 @@
 			children = (
 				E20000000000000000000203 /* WeatherViewModelTests.swift */,
 				E20000000000000000000204 /* SettingsViewModelTests.swift */,
+				E20000000000000000000212 /* CitySearchViewModelDebounceTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -427,6 +439,26 @@
 				E20000000000000000000208 /* MockLocationService.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000025 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				E20000000000000000000210 /* ReliabilityRunner.swift */,
+				E20000000000000000000209 /* ReliabilityRunnerTests.swift */,
+				E20000000000000000000211 /* AsyncTestHelpersTests.swift */,
+				684FD7FE47794EA28B7EBC3C /* AsyncTestHelpers.swift */,);
+			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		E90000000000000000000026 /* PatternTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift */,
+				1C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift */,
+							8B6A9D22B2034E8B89EB90E7 /* TimeBasedFilteringTests.swift */,
+);
+			path = PatternTests;
 			sourceTree = "<group>";
 		};
 		E90000000000000000000030 /* BruteCastUITests */ = {
@@ -507,6 +539,9 @@
 				E50000000000000000000005 /* PBXTargetDependency */,
 			);
 			name = BruteCastTests;
+			packageProductDependencies = (
+				EF0000000000000000000002 /* SnapshotTesting */,
+			);
 			productName = BruteCastTests;
 			productReference = E70000000000000000000002 /* BruteCastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -581,6 +616,9 @@
 				Base,
 			);
 			mainGroup = E90000000000000000000001;
+			packageReferences = (
+				EF0000000000000000000003 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = E90000000000000000000002 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -662,8 +700,10 @@
 				E10000000000000000000070 /* MockWeatherData.swift in Sources */,
 				E10000000000000000000071 /* MockCities.swift in Sources */,
 				E10000000000000000000072 /* MockAlerts.swift in Sources */,
+				E10000000000000000000073 /* MockDataGenerator.swift in Sources */,
 				E10000000000000000000080 /* SharedTypes.swift in Sources */,
 				E10000000000000000000081 /* AppGroup.swift in Sources */,
+				7B8A9C0D1E2F345678901234 /* DebouncedTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,10 +716,17 @@
 				E10000000000000000000202 /* GeocodingServiceTests.swift in Sources */,
 				E10000000000000000000203 /* WeatherViewModelTests.swift in Sources */,
 				E10000000000000000000204 /* SettingsViewModelTests.swift in Sources */,
+				E10000000000000000000212 /* CitySearchViewModelDebounceTests.swift in Sources */,
 				E10000000000000000000205 /* CityTests.swift in Sources */,
 				E10000000000000000000206 /* ThemeTests.swift in Sources */,
 				E10000000000000000000207 /* MockURLProtocol.swift in Sources */,
 				E10000000000000000000208 /* MockLocationService.swift in Sources */,
+				E10000000000000000000210 /* ReliabilityRunner.swift in Sources */,
+				E10000000000000000000209 /* ReliabilityRunnerTests.swift in Sources */,
+				CDEEBCB818E54BDFACEA0AFC /* AsyncTestHelpers.swift in Sources */,
+				E10000000000000000000211 /* AsyncTestHelpersTests.swift in Sources */,
+				9A1B2C3D4E5F678901234567 /* DebouncedTaskTests.swift in Sources */,
+				2C3D4E5F6789012345678901 /* MockDataGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,20 +777,6 @@
 			targetProxy = E30000000000000000000010 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXContainerItemProxy section */
-		E30000000000000000000010 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E40000000000000000000001 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E50000000000000000000004;
-			remoteInfo = BruteCastWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXBuildFile section */
-		E10000000000000000000106 /* BruteCastWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E70000000000000000000004 /* BruteCastWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
 
 /* Begin XCBuildConfiguration section */
 		ED0000000000000000000001 /* Debug */ = {
@@ -872,7 +905,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7P25PWN68D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BruteCast/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BruteCast;
@@ -905,7 +938,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7P25PWN68D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BruteCast/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BruteCast;
@@ -1014,7 +1047,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7P25PWN68D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BruteCastWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BruteCastWidget;
@@ -1041,7 +1074,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7P25PWN68D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BruteCastWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BruteCastWidget;
@@ -1110,6 +1143,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF0000000000000000000003 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF0000000000000000000002 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF0000000000000000000003 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E40000000000000000000001 /* Project object */;
 }

@@ -85,7 +85,7 @@ struct MediumWidgetView: View {
                     .foregroundColor(.secondary)
                 Text("Open app to add cities")
                     .font(.custom("JetBrainsMono-Regular", size: 8))
-                    .foregroundColor(.tertiary)
+                    .foregroundStyle(.tertiary)
             }
 
             Spacer()
@@ -110,7 +110,7 @@ struct MediumWidgetView: View {
 
                 Text(weather.city.localTime)
                     .font(.custom("JetBrainsMono-Regular", size: 7))
-                    .foregroundColor(.tertiary)
+                    .foregroundStyle(.tertiary)
             }
 
             Spacer()

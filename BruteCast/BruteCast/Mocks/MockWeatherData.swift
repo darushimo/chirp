@@ -10,14 +10,20 @@ enum MockWeatherData {
         var data: [HourlyWeather] = []
         let calendar = Calendar.current
 
+        // Generate 24-hour temperature pattern using MockDataGenerator
+        let dailyPattern = MockDataGenerator.sinusoidalCurve(
+            count: 24,
+            baseline: baseTemp,
+            amplitude: tempVariation,
+            peakOffset: 14  // Peak at 2 PM (14:00)
+        )
+
         for hour in 0..<hours {
             guard let timestamp = calendar.date(byAdding: .hour, value: hour, to: startDate) else { continue }
 
+            // Sample from daily pattern and apply random noise
             let hourOfDay = calendar.component(.hour, from: timestamp)
-            let dayProgress = Double(hourOfDay) / 24.0
-
-            let tempOffset = sin(dayProgress * .pi * 2 - .pi / 2) * tempVariation
-            let temperature = baseTemp + tempOffset + Double.random(in: -3...3)
+            let temperature = dailyPattern[hourOfDay] + Double.random(in: -3...3)
             let feelsLike = temperature + Double.random(in: -5...5)
 
             let weather = HourlyWeather(
